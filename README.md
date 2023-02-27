@@ -20,6 +20,7 @@ pip3 install -U selenium
 ```
 ## Installation
 
+You must install the web driver in the /Tome.App_Credits folder to run the script
 
 ```bash
 git clone https://github.com/Sweizeur/Tome.App_Credits.git
