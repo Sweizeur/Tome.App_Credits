@@ -16,7 +16,7 @@ The Great Hunter is a local multiplayer game made with the Pyxel library. You pl
 
 ## Requirements
 
-For this project you need to import : [Pyxel](https://github.com/kitao/pyxel), [webbrowser](https://docs.python.org/3/library/webbrowser.html), [playsound](https://pypi.org/project/playsound/).
+For this project you need to import : [Selenium]([https://github.com/kitao/pyxel](https://github.com/SeleniumHQ/selenium))
 
 ```bash
 pip3 install -U selenium
