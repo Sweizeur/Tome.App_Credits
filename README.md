@@ -34,6 +34,4 @@ git clone https://github.com/Sweizeur/Tome.App_Credits.git
 
 ## Support
 
-- For anyone who needs help, contact me by discord (Sweizeur#4465) or contact Melman (Melman#6771)
-
-- Pour les étudiants français ayant la spécialité NSI pour toute aide venez discord
+- For anyone who needs help, contact me by discord (Sweizeur#4465)
