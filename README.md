@@ -17,6 +17,7 @@ For this project you need to import : [Selenium]([https://github.com/kitao/pyxel
 
 ```bash
 pip3 install -U selenium
+pip3 install -U mailtm
 ```
 ## Installation
 
@@ -25,11 +26,6 @@ You must install the web driver in the /Tome.App_Credits folder to run the scrip
 ```bash
 git clone https://github.com/Sweizeur/Tome.App_Credits.git
 ```
-    
-## Optimizations
-
-The code is far from being optimized, the library and the temp do not allow us to make a "clean" code
-
 
 ## License
 
