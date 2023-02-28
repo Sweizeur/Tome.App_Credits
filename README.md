@@ -1,7 +1,7 @@
 
 # The Great Hunter
 
-The Great Hunter is a local multiplayer game made with the Pyxel library. You play as a hunter who must succeed in catching the person who must escape you. This group project was made in "NSI".
+The Great Hunter is a python robot allowing to have unlimited credits on the site [Tome.App](https://tome.app/].
 
 
 
