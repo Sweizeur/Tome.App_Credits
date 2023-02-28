@@ -21,7 +21,7 @@ pip3 install -U mailtm
 ```
 ## Installation
 
-You must install the [web driver](https://selenium-python.readthedocs.io/installation.html) in the /Tome.App_Credits folder to run the script
+You must install the [webdriver.exe](https://selenium-python.readthedocs.io/installation.html) (Chrome, Firefox, Egde accepted) in the /Tome.App_Credits folder to run the script
 
 ```bash
 git clone https://github.com/Sweizeur/Tome.App_Credits.git
