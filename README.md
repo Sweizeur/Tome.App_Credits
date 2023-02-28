@@ -1,7 +1,7 @@
 
 # The Great Hunter
 
-The Great Hunter is a python robot allowing to have unlimited credits on the site [Tome.App](https://tome.app/].
+The Great Hunter is a python robot allowing to have unlimited credits on the site [Tome.App](https://tome.app/).
 
 
 
