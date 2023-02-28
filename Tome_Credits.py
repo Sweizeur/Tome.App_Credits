@@ -7,6 +7,8 @@ from selenium.webdriver.chrome.options import Options
 import time
 from mailtm import Email
 
+dic = {"Chrome": "chromedriver.exe", "Firefox": "geckodriver.exe", "Edge": "msedgedriver.exe"}
+
 lien = input("Enter the referral link >> ")
 
 while True:
@@ -22,7 +24,8 @@ while True:
             link = mess[0]
         options = Options()
         options.add_experimental_option('excludeSwitches', ['enable-logging'])
-        service = Service('chromedriver.exe')
+        s = input("Enter the browser you want to use (Chrome, Firefox, Edge)>> ")
+        service = Service(dic[s])
         driver = webdriver.Chrome(service=service, options=options)
         driver.get(lien)
         time.sleep(3)
@@ -41,6 +44,6 @@ while True:
         print("+100 additional credits")
         driver.quit()
     except KeyboardInterrupt:
-        break
+        quit()
     except:
         pass
