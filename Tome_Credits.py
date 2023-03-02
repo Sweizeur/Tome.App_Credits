@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from mailtm import Email
 import time
@@ -17,12 +15,16 @@ BROWSERS = {
     "chrome": webdriver.Chrome,
     "firefox": webdriver.Firefox,
     "safari": webdriver.Safari,
+    "edge": webdriver.Edge,
+    "opera": webdriver.Opera,
+    "ie": webdriver.Ie,
+    # Ajouter d'autres navigateurs pris en charge si nécessaire
 }
 
 options = Options()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-header1 = ' Browser name (chrome, firefox, safari)'
+header1 = ' Browser name (chrome, firefox, safari, edge, opera, ie)'
 print(f'\n{header1:-^70}')
 browserpath = input(">>> ")
 print(f'{"":-^70}')
