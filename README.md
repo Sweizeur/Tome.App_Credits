@@ -1,7 +1,7 @@
 
-# The Great Hunter
+# Tome.App_Credits
 
-The Great Hunter is a python robot allowing to have unlimited credits on the site [Tome.App](https://tome.app/).
+Tome.App_Credits is a python robot allowing to have unlimited credits on the site [Tome.App](https://tome.app/).
 
 
 
