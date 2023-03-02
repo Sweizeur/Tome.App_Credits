@@ -9,6 +9,7 @@ The Great Hunter is a python robot allowing to have unlimited credits on the sit
 ## Authors
 
 - 👤 [@Sweizeur](https://github.com/sweizeur)
+- 👤 [@quentin-lpr](https://github.com/quentin-lpr)
 
 
 ## Requirements
