@@ -17,7 +17,6 @@ BROWSERS = {
     "chrome": webdriver.Chrome,
     "firefox": webdriver.Firefox,
     "safari": webdriver.Safari,
-    # Ajouter d'autres navigateurs pris en charge si nécessaire
 }
 
 options = Options()
