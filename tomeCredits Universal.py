@@ -10,7 +10,11 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from mailtm import Email
 import time
 
-startTime = time.time()
+counter = 0
+def increment_counter():
+    global counter
+    counter += 1
+    return counter
 
 class Boot:
   def selectBrowser(self):
@@ -105,19 +109,16 @@ class Bot:
     print("[LOG] Quitting...")
     WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".Onboardingstyles__Title-sc-17kwpbw-2")))
     time.sleep(1)
-    text = ' 100 credits added to your account. '
-    print(f'{text:.>70}')
+    print(f'{" 100 credits added to your account. ":.>70}')
     print(f'Time elapsed: {time.time() - startTime} seconds')
-    print(f'{"":-^70}')
+    print(f'{"":=^70}')
     driver.quit()
 
   def tempMail(self):
     tempMail = Email()
     print("[LOG] Generating temporary email...")
     tempMail.register(username=None, password="P@ssword123")
-    text = ' Your temporary credentials are '
-    print(f'\n{text:-^70}')
-    print("Mail   >>> " + tempMail.address)
+    print("\nMail   >>> " + tempMail.address)
     print("Passwd >>> P@ssword123")
     return tempMail
 
@@ -155,24 +156,29 @@ start.selectBrowser()
 start.headlessMode()
 start.referralLink()
 
-browser = Bot()
-if headlessMode.lower() == "yes":
-  if browserPath.lower() == "chrome":
-    Browsers.chrome()
-  elif browserPath.lower() == "edge":
-    Browsers.edge()
-  elif browserPath.lower() == "firefox":
-    Browsers.firefox()
-  elif browserPath.lower() == "safari":
-    print("[ERROR] Safari does not support headless mode, continuing with GUI...")
-    Browsers.safari()
+while True:
+  startTime = time.time()
+  increment_counter()
+  print(f'{"":=^70}')
+  print(f'{"Run " + str(counter) + ":":^70}')
+  browser = Bot()
+  if headlessMode.lower() == "yes":
+    if browserPath.lower() == "chrome":
+      Browsers.chrome()
+    elif browserPath.lower() == "edge":
+      Browsers.edge()
+    elif browserPath.lower() == "firefox":
+      Browsers.firefox()
+    elif browserPath.lower() == "safari":
+      print("[ERROR] Safari does not support headless mode, continuing with GUI...")
+      Browsers.safari()
+    else:
+      print("[ERROR] Invalid browser")
+      quit()
+  elif headlessMode.lower() == "no":
+    browser.setup()
   else:
-    print("[ERROR] Invalid browser")
+    print('[ERROR] Please choose "yes" or "no"')
     quit()
-elif headlessMode.lower() == "no":
-  browser.setup()
-else:
-  print('[ERROR] Please choose "yes" or "no"')
-  quit()
-browser.credits()
-browser.quit()
+  browser.credits()
+  browser.quit()
