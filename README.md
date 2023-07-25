@@ -23,6 +23,9 @@ and the [MailTM](https://pypi.org/project/MailTm/) library
 pip3 install -U mailtm
 ```
 
+## Configuration
+go to [referral link](tome.app/sweizeur?referralStatus=false), copy code and start the program
+
 ## Installation
 You must install the [webdriver.exe](https://selenium-python.readthedocs.io/installation.html) (Chrome, Firefox, Safari accepted) in the folder in order to run the script
 
