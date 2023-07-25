@@ -107,7 +107,7 @@ class Bot:
 
   def quit(self):
     print("[LOG] Quitting...")
-    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".Onboardingstyles__Title-sc-17kwpbw-2")))
+    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".Onboardingstyles__Title-sc-17kwpbw-1.bhgVsD")))
     time.sleep(1)
     print(f'{" 100 credits added to your account. ":.>70}')
     print(f'Time elapsed: {time.time() - startTime} seconds')
@@ -134,7 +134,7 @@ class Bot:
     driver.get(link)
 
   def credits(self):
-    driver.find_element(By.CLASS_NAME, "ButtonReset__StyledResetButton-sc-1eju8s6-0.kDdkdo.TomeButton__ButtonWrapper-sc-1vamjj4-0.hKCJSQ.Invitestyles__StyledButton-w0uhp2-4.bHQWMr").click()
+    driver.find_element(By.CSS_SELECTOR, ".ButtonReset__StyledResetButton-sc-1eju8s6-0.hpPtek.TomeButton__ButtonWrapper-sc-1vamjj4-0.hKCJSQ.Invitestyles__StyledButton-w0uhp2-4.bHQWMr").click()
     WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.ID, "email")))
     global tempMail
     tempMail = self.tempMail()
@@ -146,7 +146,7 @@ class Bot:
     time.sleep(2)
     print("[LOG] Verifying email...")
     tempMail.start(self.checkVerificationLink)
-    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".Onboardingstyles__Title-sc-17kwpbw-2")))
+    WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".Onboardingstyles__Title-sc-17kwpbw-1.bhgVsD")))
     print("[LOG] Email verified")
     time.sleep(2)
     tempMail.stop()
