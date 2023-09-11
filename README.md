@@ -9,7 +9,7 @@ tomeCredits is a python script allowing to have unlimited credits on the website
 - 👤 [@quentin-lpr](https://github.com/quentin-lpr)
 
 ## Infos
-- "tomeCredits.py" is an updated script in wich you can choose your browser and choose if you want a GUI (see the brower) or not
+- "tomeCredits Universal.py" is an updated script in wich you can choose your browser and choose if you want a GUI (see the brower) or not
 
 ## Requirements
 For this project you will need to import : [Selenium](https://github.com/SeleniumHQ/selenium)
